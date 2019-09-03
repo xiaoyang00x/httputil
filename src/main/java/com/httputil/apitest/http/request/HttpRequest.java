@@ -103,7 +103,7 @@ public class HttpRequest {
             }
 
             if (MapUtils.isNotEmpty(httpRequestMode.getBody())) {
-                requestSpecification.body(httpRequestMode.getBody().toString());
+                requestSpecification.body(httpRequestMode.getBody());
                 contextType = "application/json";
             }
 
