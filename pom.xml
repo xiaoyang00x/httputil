@@ -109,4 +109,20 @@
 
 
     </dependencies>
+
+
+
+    <distributionManagement>
+        <repository>
+            <id>benmu-nexus-release</id>
+            <name>release</name>
+            <url>>http://10.32.17.108:8081/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>benmu-nexus-snapshot</id>
+            <name>snapshot</name>
+            <uniqueVersion>false</uniqueVersion>
+            <url>http://10.32.17.108:8081/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
