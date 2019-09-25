@@ -191,7 +191,6 @@ public class PropertyUtil {
             return null;
         }
     }
-
     public static Properties loadProperties(String propertyName) {
         if(propertyName != null && !"".equals(propertyName)) {
             Properties retProps = new Properties();
