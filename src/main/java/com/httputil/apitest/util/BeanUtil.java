@@ -1,7 +1,6 @@
 package com.httputil.apitest.util;
 
 import com.google.gson.Gson;
-import com.httputil.apitest.core.ApiTestListener;
 import com.httputil.apitest.http.annotation.JsonBody;
 import com.httputil.apitest.http.annotation.JsonValue;
 import org.slf4j.Logger;
@@ -17,7 +16,7 @@ import java.util.Map.Entry;
  * Created by yangyu on 2019/3/20.
  */
 public class BeanUtil {
-    private static final Logger log = LoggerFactory.getLogger(ApiTestListener.class);
+    private static final Logger log = LoggerFactory.getLogger(BeanUtil.class);
     private static final String OMIT_REG = "_";
 
     public BeanUtil() {
