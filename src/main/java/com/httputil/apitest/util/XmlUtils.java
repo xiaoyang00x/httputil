@@ -21,6 +21,8 @@ public class XmlUtils {
 
     /**
      * 读取xml文件
+     *
+     * * @param xmlPath   xml文件的绝对路
      */
     public static String readXml(String xmlPath) {
         Document document = load(xmlPath);
@@ -50,7 +52,7 @@ public class XmlUtils {
      *
      * @param nodeXpath "/root/output/day_views/day_view/registry_list/registry/count"
      * @param targetStr 属性更改后的值
-     * @param xmlPath   xml文件路径，"src/main/resources/xml/xxx.xml"
+     * @param xmlPath   xml文件的绝对路径
      * @param itemIndex 需要更新的第几个节点
      * @throws Exception
      */
