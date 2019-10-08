@@ -15,7 +15,7 @@ import java.util.List;
 
 public class MethodSelector implements IMethodInterceptor {
     private ArrayList<String> cidList = new ArrayList<String>();
-    private ArrayList<String> httpurlList = new ArrayList<String>();
+    private ArrayList<String> pathList = new ArrayList<String>();
     private ArrayList<String> levelList = new ArrayList<String>();
     private ArrayList<String> authorList = new ArrayList<String>();
 
@@ -24,7 +24,7 @@ public class MethodSelector implements IMethodInterceptor {
 
         //初始化运行列表
         String cid = PropertyUtil.getProperty("cid");
-        String httpurl = PropertyUtil.getProperty("httpurl");
+        String path = PropertyUtil.getProperty("path");
         String level = PropertyUtil.getProperty("level");
         String author = PropertyUtil.getProperty("author");
         if (!StringUtil.isEmpty(cid)) {
@@ -33,9 +33,9 @@ public class MethodSelector implements IMethodInterceptor {
             }
         }
 
-        if (!StringUtil.isEmpty(httpurl)) {
-            for (String tem : httpurl.split(",")) {
-                httpurlList.add(tem);
+        if (!StringUtil.isEmpty(path)) {
+            for (String tem : path.split(",")) {
+                pathList.add(tem);
             }
         }
 
@@ -80,7 +80,7 @@ public class MethodSelector implements IMethodInterceptor {
 
         TestCaseListener testCaseListener = method.getConstructorOrMethod().getMethod().getAnnotation(TestCaseListener.class);
         String cid = testCaseListener.cid();
-        String httpurl = testCaseListener.httpurl();
+        String path = testCaseListener.path();
         String level = testCaseListener.level();
         String author = testCaseListener.author();
 
@@ -88,7 +88,7 @@ public class MethodSelector implements IMethodInterceptor {
             return true;
 
 
-        if (!httpurlList.isEmpty() && httpurlList.contains(httpurl))
+        if (!pathList.isEmpty() && pathList.contains(path))
             return true;
 
 

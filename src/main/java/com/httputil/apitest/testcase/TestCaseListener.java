@@ -20,7 +20,7 @@ public @interface TestCaseListener {
 
 
     //http请求url path
-    public String httpurl() default "";
+    public String path() default "";
 
 
     //用例级别 p0、p1、p2
@@ -33,6 +33,9 @@ public @interface TestCaseListener {
 
     //case描述
     public String description() default "";
+
+    //接口类型 rpc/http
+    public String type() default "";
 
 
 }
