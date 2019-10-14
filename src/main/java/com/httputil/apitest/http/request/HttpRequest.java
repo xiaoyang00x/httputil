@@ -117,6 +117,13 @@ public class HttpRequest {
                 requestSpecification.cookies(httpRequestMode.getCookies());
             }
 
+            // 兼容在线咨询医生端特殊的batman-token字段
+            if (MapUtils.isNotEmpty(httpRequestMode.getCookies())) {
+                Map httpCookie = new HashMap(5);
+                httpCookie.put("batman-token",httpRequestMode.getCookies().get("batman_token"));
+                requestSpecification.cookies(httpCookie);
+            }
+
             if (MapUtils.isNotEmpty(httpRequestMode.getRetryConditions())) {
                 var12 = httpRequestMode.getRetryConditions();
 
