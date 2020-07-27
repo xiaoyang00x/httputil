@@ -63,7 +63,6 @@ public class MethodSelector implements IMethodInterceptor {
                     updatedMethodInstance.add(method);
             } catch (Exception e) {
             }
-
         }
         return updatedMethodInstance;
 
