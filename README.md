@@ -1,3 +1,3 @@
-本木自动化测试框架
+自动化测试框架
 
-wiki:https://c.benmu-health.org/pages/viewpage.action?pageId=12505127
+语雀:https://www.yuque.com/u210385/kb/gh5clo

@@ -107,18 +107,18 @@
 
 
 
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>release</name>
-            <url>>http://nexus.bmsre.com:8081/repository/maven-releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <name>snapshot</name>
-            <uniqueVersion>false</uniqueVersion>
-            <url>http://nexus.bmsre.com:8081/repository/maven-snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>maven-releases</id>-->
+<!--            <name>release</name>-->
+<!--            <url>>http://nexus.bmsre.com:8081/repository/maven-releases</url>-->
+<!--        </repository>-->
+<!--        <snapshotRepository>-->
+<!--            <id>maven-snapshots</id>-->
+<!--            <name>snapshot</name>-->
+<!--            <uniqueVersion>false</uniqueVersion>-->
+<!--            <url>http://nexus.bmsre.com:8081/repository/maven-snapshots</url>-->
+<!--        </snapshotRepository>-->
+<!--    </distributionManagement>-->
 </project>
 
